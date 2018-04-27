@@ -1,6 +1,6 @@
-﻿@Code
-  ViewBag.Title = "TreeList - How to move nodes using a context menu"
-End Code
+﻿@{
+    ViewBag.Title = "TreeList - How to move nodes using a context menu";
+}
 <style>
     .cutRow {
         background-color: lightblue;
@@ -9,7 +9,8 @@ End Code
 <script>
     function OnCallbackError(s, e) {
         // if (e.message == "You're trying to move a parent node to its child") - uncomment this line to reset styles only in certain cases
-        myCallback = false;            
+        myCallback = false;
+            
     }
     var myCallback = false;
     function OnBeginCallback(s, e) {
@@ -72,12 +73,17 @@ End Code
 @Html.Action("TreeListPartial")
 
 
-@Html.DevExpress().PopupMenu(Sub(settings)
+@Html.DevExpress().PopupMenu(settings =>
+{
+    settings.Name = "clientPopupMenu";
+    settings.AllowSelectItem = false;
+    settings.Items.Add(item =>
+    {
+        item.Text = "Cut";
+        item.Name = "cut";
 
-    settings.Name = "clientPopupMenu"
-    settings.AllowSelectItem = False
-    settings.Items.Add("Cut","cut")
-    settings.Items.Add("Paste", "paste")
-    settings.ClientSideEvents.ItemClick = "function(s, e) { ProcessNodeClick (e.item.name);}"
+    });
+    settings.Items.Add("Paste", "paste");
+    settings.ClientSideEvents.ItemClick = "function(s, e) { ProcessNodeClick (e.item.name);}";
     
-End Sub).GetHtml()
+}).GetHtml()

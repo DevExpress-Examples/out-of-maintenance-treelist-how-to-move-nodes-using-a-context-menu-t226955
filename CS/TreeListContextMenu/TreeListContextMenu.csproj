@@ -47,39 +47,39 @@
   <ItemGroup>
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Data.v14.1.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Office.v14.1.Core.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Printing.v14.1.Core.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.RichEdit.v14.1.Core.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Web.ASPxThemes.v14.1.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.Web.ASPxTreeList.v14.1, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Web.ASPxTreeList.v14.1.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.Web.Mvc.v14.1, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Web.Mvc.v14.1.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.Web.v14.1, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.Web.v14.1.dll</HintPath>
+      
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DevExpress.XtraPrinting.v14.1.dll</HintPath>
+      
     </Reference>
     <Reference Include="DotNetOpenAuth.AspNet">
       <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
