@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TreeListContextMenu")]
-[assembly: AssemblyCopyright("Copyright ? 2015")]
+[assembly: AssemblyCopyright("Copyright © 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6d1ba9b8-5844-4e90-afc5-896eac4617a2")]
+[assembly: Guid("559ff25c-cc8e-4bdd-9cb1-3b43b03e9cef")]
 
 // Version information for an assembly consists of the following four values:
 //
