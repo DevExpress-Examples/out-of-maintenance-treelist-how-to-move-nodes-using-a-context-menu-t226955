@@ -1,16 +1,17 @@
-﻿@{
+@{
     ViewBag.Title = "TreeList - How to move nodes using a context menu";
 }
-<style>
+
+<style type="text/css">
     .cutRow {
         background-color: lightblue;
     }
 </style>
-<script>
+<script type="text/javascript">
     function OnCallbackError(s, e) {
         // if (e.message == "You're trying to move a parent node to its child") - uncomment this line to reset styles only in certain cases
         myCallback = false;
-            
+
     }
     var myCallback = false;
     function OnBeginCallback(s, e) {
@@ -34,14 +35,14 @@
         currentNodeKey = nodeKey;
         var menu = ASPxClientPopupMenu.Cast(clientPopupMenu);
         menu.GetItemByName("paste").SetEnabled(copyNodeKey != null);
-           
+
     }
     function OnEndCallback(s, e) {
         if (myCallback) {
             ResetValues();
         }
     }
-    function ResetValues() {                       
+    function ResetValues() {
         currentNodeKey = null; copyNodeKey = null;
     }
     function ProcessNodeClick(itemName) {
@@ -62,7 +63,7 @@
                         return;
                     }
                     TreeList.PerformCallback({ employeeID: copyNodeKey, reportsTo: currentNodeKey });
-                       
+
                     break;
                 }
         }
@@ -72,18 +73,11 @@
 <h2>@ViewBag.Title</h2>
 @Html.Action("TreeListPartial")
 
-
 @Html.DevExpress().PopupMenu(settings =>
 {
     settings.Name = "clientPopupMenu";
     settings.AllowSelectItem = false;
-    settings.Items.Add(item =>
-    {
-        item.Text = "Cut";
-        item.Name = "cut";
-
-    });
+    settings.Items.Add("Cut", "cut");
     settings.Items.Add("Paste", "paste");
     settings.ClientSideEvents.ItemClick = "function(s, e) { ProcessNodeClick (e.item.name);}";
-    
 }).GetHtml()
